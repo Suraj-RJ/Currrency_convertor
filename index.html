@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Currency Converter</h2>
+      
+      <!-- Currency Amount Input -->
+      <div class="currency-input">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" min="0" />
+      </div>
+      
+      <!-- Select Boxes for From and To currencies -->
+      <div class="select-box">
+        <div class="select">
+          <label for="from">From</label>
+          <select name="from" id="from">
+            <!-- Currency options will be added dynamically -->
+          </select>
+        </div>
+        <div class="select">
+          <label for="to">To</label>
+          <select name="to" id="to">
+            <!-- Currency options will be added dynamically -->
+          </select>
+        </div>
+      </div>
+      
+      <!-- Button to trigger conversion -->
+      <button id="calculate">Get Exchange Rate</button>
+      
+      <!-- Output Display -->
+      <p class="output" id="output">₹99</p>
+    </div>
+
+    <script src="js/country.js"></script> <!-- This will populate the select options -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
